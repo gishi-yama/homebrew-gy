@@ -6,5 +6,5 @@ cask 'myukkurivoice' do
   name 'MYukkuriVoice'
   homepage 'https://github.com/taku-o/myukkurivoice'
 
-  app 'myukkurivoice-darwin-x64/myukkurivoice.app'
+  app 'myukkurivoice-darwin-x64'
 end
