@@ -8,6 +8,9 @@ cask 'flic' do
 
   app 'Flic.app'
 
-  uninstall pkgutil: 'com.shortcutlabs.FlicMac|com.shortcutlabs.FlicMac.*|com.shortcutlabs.fliclibMac'
+  zap delete: [
+	'~/Library/Application Scripts/com.shortcutlabs.FlicMac',
+	'~/Library/Containers/com.shortcutlabs.FlicMac'
+              ]  
 
 end
