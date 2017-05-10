@@ -7,4 +7,13 @@ cask 'myukkurivoice' do
   homepage 'https://github.com/taku-o/myukkurivoice'
 
   app 'myukkurivoice-darwin-x64'
+
+  zap delete: [
+	'~/Library/Application Support/myukkurivoice',
+	'~/Library/Logs/myukkurivoice',
+	'~/Library/Preferences/com.electron.myukkurivoice.helper.plist',
+	'~/Library/Preferences/com.electron.myukkurivoice.plist',
+	'~/Library/Saved Application State/com.electron.myukkurivoice.savedState'
+              ]
+
 end
