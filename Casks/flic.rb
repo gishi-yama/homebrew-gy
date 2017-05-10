@@ -7,4 +7,7 @@ cask 'flic' do
   homepage 'https://flic.io/mac-app/'
 
   app 'Flic.app'
+
+  uninstall pkgutil: 'com.shortcutlabs.FlicMac|com.shortcutlabs.FlicMac.*|com.shortcutlabs.fliclibMac'
+
 end
