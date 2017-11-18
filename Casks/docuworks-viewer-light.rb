@@ -6,7 +6,7 @@ cask 'docuworks-viewer-light' do
   name 'DocuWorks Viewer Light Mac JP'
   homepage 'https://www.fujixerox.co.jp/download/software/docuworks/download103/index.html'
 
-  pkg "DWViewerLight.pkg"
-  
+  pkg 'DWViewerLight.pkg'
+
   uninstall pkgutil: 'com.fujixerox.docuworks.dwvl'
 end
