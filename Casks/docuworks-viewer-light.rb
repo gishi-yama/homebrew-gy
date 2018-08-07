@@ -4,9 +4,9 @@ cask 'docuworks-viewer-light' do
 
   url 'http://download.fujixerox.co.jp/pub/exe/docuworks/DWVL800.dmg'
   name 'DocuWorks Viewer Light Mac JP'
-  homepage 'https://www.fujixerox.co.jp/download/software/docuworks/download103/index.html'
+  homepage 'https://www.fujixerox.co.jp/download/software/docuworks/download102'
 
-  pkg 'DWViewerLight.pkg'
+  pkg 'DWViewerLight.pkg', allow_untrusted: true
 
   uninstall pkgutil: 'com.fujixerox.docuworks.dwvl'
 end
