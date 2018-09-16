@@ -1,6 +1,6 @@
 cask 'myukkurivoice' do
-  version '0.6.9'
-  sha256 '3fe382a6c056722eff856ad63b92eed14006adf8ad5398a069a95109000e5c5a'
+  version '0.6.10'
+  sha256 'ce595d7e7a2409140be65617a616799aa642b21cac444b3aec5cc0cab8fc6d4a'
 
   url "https://github.com/taku-o/myukkurivoice/releases/download/#{version}/myukkurivoice-darwin-x64.zip"
   appcast 'https://github.com/taku-o/myukkurivoice/releases.atom'
