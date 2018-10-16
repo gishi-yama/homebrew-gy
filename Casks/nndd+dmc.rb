@@ -1,6 +1,6 @@
 cask 'nndd+dmc' do
-  version '3.0.7'
-  sha256 '78178cfdeb7d7a447fd7d6296c3e2fe1ad12cbbcd6a73e3f8a90b944c50496d6'
+  version '3.0.8'
+  sha256 'a8e329860f8f0162bb7e0ea72906354c3961f310ad98301b18957b91c39189b4'
 
   url "https://github.com/SSW-SCIENTIFIC/NNDD/releases/download/v#{version}-Beta/NNDD_v#{version.dots_to_underscores}.dmg"
   appcast 'https://github.com/SSW-SCIENTIFIC/NNDD/releases.atom'
