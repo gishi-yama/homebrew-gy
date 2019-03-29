@@ -8,5 +8,5 @@ cask 'oki_c332dnw' do
 
   pkg 'Installer for OSX.pkg'
 
-  uninstall pkgutil: 'com.okidata.okiPostscriptDriver.OELnew.*'
+  uninstall pkgutil: 'com.okidata.pkg.MC573.*'
 end
