@@ -1,10 +1,10 @@
 cask 'font-corporate-logo-b' do
-  version "202202"
-  sha256 'e4725f153241022af54b1dba3a4cbc281bcd4c746f8a353baaaab70bd32e9afa'
+  version "3"
+  sha256 '0c964fd694a993505c0245012b1aa8e9ec0c24b765e27c548a13a8365bbac784'
 
-  url "https://logotype.jp/wp-content/uploads/2022/02/corpgo-b-ver2-font_#{version}.zip"
-  name 'Corporate Logo Bold'
-  homepage 'https://logotype.jp/corporate-logo-font-dl-old-v2.html'
+  url "https://logotype.jp/wp-content/uploads/2022/10/Corporate-Logo-Bold-ver#{version}.zip"
+  name 'Corporate Logo Bold ver3'
+  homepage 'https://logotype.jp/corporate-logo-font-dl.html'
 
   # 自動展開を無効化
   container type: :naked
@@ -17,7 +17,7 @@ cask 'font-corporate-logo-b' do
     else
       tmp_dir = Dir.mktmpdir("corpgo_b_", "/private/tmp")
       begin
-        zip_file = staged_path.join("corpgo-b-ver2-font_#{version}.zip")
+        zip_file = staged_path.join("Corporate-Logo-Bold-ver#{version}.zip")
         system_command unar_path, args: [
           "-quiet",
           "-e", "cp932",
@@ -28,7 +28,7 @@ cask 'font-corporate-logo-b' do
         font_file = Dir.glob(File.join(tmp_dir, "**", "*.otf")).first
         raise "OTF ファイルが見つかりません" unless font_file
   
-        target = File.expand_path("~/Library/Fonts/Corporate-Logo-Bold-ver2.otf")
+        target = File.expand_path("~/Library/Fonts/Corporate-Logo-Bold-ver3.otf")
         # FileUtils.install は指定したパーミッションでコピーするため、
         # chown の必要がなく、ユーザー所有となります。
         FileUtils.install(font_file, target, mode: 0644)
