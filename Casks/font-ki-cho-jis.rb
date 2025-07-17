@@ -1,8 +1,8 @@
 cask 'font-ki-cho-jis' do
-  version '0.301'
-  sha256 '55fe1a39a5d4a5c80903838f2fbc92409a999eeaf80b00ddc35c8d3c3217b4ee'
+  version '0.310'
+  sha256 'a0c2b1cde05d89e34ec2b1b137f27ab23b768b89570fbd800c48dd2cd4a7c5a7'
 
-  url "https://font.kim/ki-cho-jis_0301.zip"
+  url "https://font.kim/ki-cho-jis_0310.zip"
   name 'ki-cho-jis'
   homepage 'https://font.kim/'
 
