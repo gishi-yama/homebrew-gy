@@ -3,7 +3,6 @@ cask 'myukkurivoice' do
   sha256 'ce595d7e7a2409140be65617a616799aa642b21cac444b3aec5cc0cab8fc6d4a'
 
   url "https://github.com/taku-o/myukkurivoice/releases/download/#{version}/myukkurivoice-darwin-x64.zip"
-  appcast 'https://github.com/taku-o/myukkurivoice/releases.atom'
 
   name 'MYukkuriVoice'
   homepage 'https://github.com/taku-o/myukkurivoice'
