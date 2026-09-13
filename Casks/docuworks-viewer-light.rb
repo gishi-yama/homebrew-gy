@@ -11,4 +11,8 @@ cask "docuworks-viewer-light" do
   pkg "DWViewerLight.pkg", allow_untrusted: true
 
   uninstall pkgutil: "jp.co.fujixerox.docuworks.dwvlt"
+
+  caveats do
+    requires_rosetta
+  end
 end
