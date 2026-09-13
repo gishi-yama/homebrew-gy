@@ -8,7 +8,7 @@ cask "docuworks-viewer-light" do
 
   depends_on :macos
 
-  pkg "DWViewerLight.pkg", allow_untrusted: true
+  pkg "DWViewerLight.pkg"
 
   uninstall pkgutil: "jp.co.fujixerox.docuworks.dwvlt"
 
