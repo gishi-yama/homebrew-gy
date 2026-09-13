@@ -1,12 +1,14 @@
-cask 'docuworks-viewer-light' do
-  version '9.1.1'
-  sha256 '6258277b375e09e0703a0af6746e9a476df5613bb1f3bfb6f7303cb8c71c8578'
+cask "docuworks-viewer-light" do
+  version "9.1.3"
+  sha256 "ab05641913433f0466880ba1c266284b9f480a6f568878d882006db74a8a2c80"
 
-  url 'https://assets-fb.fujifilm.com/download/pub/exe/docuworks/1/dwvl911.dmg'
-  name 'DocuWorks Viewer Light Mac JP'
-  homepage 'https://www.fujifilm.com/fb/download/software/docuworks/download102'
+  url "https://asset-fb.fujifilm.com/www/fb/files/2026-03/71b5269c648d1634c105590f0060b568/dwvl913.dmg"
+  name "DocuWorks Viewer Light Mac JP"
+  homepage "https://www.fujifilm.com/fb/ja/support/software/document-management/docuworks/download/102"
 
-  pkg 'DWViewerLight.pkg', allow_untrusted: true
+  depends_on :macos
 
-  uninstall pkgutil: 'jp.co.fujixerox.docuworks.dwvlt'
+  pkg "DWViewerLight.pkg", allow_untrusted: true
+
+  uninstall pkgutil: "jp.co.fujixerox.docuworks.dwvlt"
 end
